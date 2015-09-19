@@ -1,0 +1,147 @@
+﻿<Controls:Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:Elysium.Controls;assembly=Elysium"
+        xmlns:params="http://schemas.codeplex.com/elysium/params" x:Name="window" x:Class="MainWindow"
+        WindowStartupLocation="CenterScreen"
+        params:Design.Theme="Light" 
+        params:Manager.Theme="Light" FontSize="16" FontFamily="Segoe UI Light" Title="Visualizer - Purdue Lunabotics" Foreground="#FF4D4D4D" Icon="Icons/BlueMoon/BlueMoon48.ico" Loaded="Window_Loaded" Width="1080" Height="650" MinWidth="1080" MinHeight="650"  >
+
+    <Grid>
+
+
+        <Menu Margin="0" VerticalAlignment="Top" Padding="0,0,6,0" Grid.ColumnSpan="2">
+            <MenuItem Header="FILE" Foreground="White" Background="#FF117DD6" Padding="6,2" BorderThickness="0,1,1,0" FontSize="14"/>
+            <MenuItem Header="EDIT" FontSize="14" Padding="6,2"/>
+            <MenuItem Header="VIEW" FontSize="14" Padding="6,2"/>
+            <MenuItem Header="PROJECT" FontSize="14" Padding="6,2"/>
+            <MenuItem Header="TOOLS" FontSize="14" Padding="6,2">
+                <MenuItem Header="Customze..." FontSize="14" Padding="6,2,6,6"/>
+                <MenuItem Header="Monitor Modify" FontSize="14" Padding="6,2,6,6"/>
+                <Separator />
+                <MenuItem Header="Interface Settings" FontSize="14" Padding="6,2,6,6"/>
+            </MenuItem>
+            <MenuItem Header="HELP" FontSize="14" Padding="6,2"/>
+        </Menu>
+
+        <TabControl Margin="10,46,10,25" Grid.ColumnSpan="2">
+            <TabItem Header="Overview">
+                <Grid Background="#FFFFFFFF">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <GroupBox Header="Autonomy &amp; Control" Margin="2.5" MinHeight="100" MinWidth="400" FontSize="14" Foreground="#FF0467AA"  Grid.ColumnSpan="2">
+                        
+                    </GroupBox>
+                    
+                    <GroupBox Header="ExDep" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Column="3"/>
+
+
+                    <GroupBox Header="Drive Train" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Row="1"/>
+                    <GroupBox Header="Power" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Row="1" Grid.Column="1"/>
+                    <GroupBox Header="Lunabot Control Panel" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Row="1" Grid.Column="2">
+                        <Grid >
+                            <Button x:Name="Reset_Btn" Content="Reset" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Margin="190,70,0,0"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="30,0,0,87" TextWrapping="Wrap" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="14" Text="Watchdog" Foreground="Black"/>
+                            <TextBlock HorizontalAlignment="Left" Margin="30,0,0,39" TextWrapping="Wrap" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="14" Text="Warm Restart" Foreground="Black"/>
+                            <ProgressBar HorizontalAlignment="Left" Height="15" Margin="190,32,0,0" VerticalAlignment="Top" Width="75" Value="50" Foreground="#FF0467AA"/>
+                        </Grid>
+
+
+                    </GroupBox>
+
+                    <GroupBox Header="System Log" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Autonomy">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Control">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="DriveTrain">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Power">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="ExDep">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Communications">
+                <Grid Background="#FFFFFFFF">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                
+                    <Grid HorizontalAlignment="Left">
+
+
+                        <TextBlock HorizontalAlignment="Left" Margin="14,10,0,0" TextWrapping="Wrap" Text="Local Interface" VerticalAlignment="Top" Height="19" Width="89" FontSize="13" Foreground="#FF0467AA"/>
+                        <ComboBox x:Name="LocalInterfaces_ComboBox" HorizontalAlignment="Left" Margin="14,34,0,0" VerticalAlignment="Top" FontSize="12" MinWidth="456" />
+                        <CheckBox x:Name="ShowAllInterfaces_ChkBox" Content="Show all Interfaces" HorizontalAlignment="Left" Margin="14,68,0,0" VerticalAlignment="Top" FontSize="13" Height="18" Width="135"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,93,0,0" TextWrapping="Wrap" Text="Local IP Address" VerticalAlignment="Top" Height="19" Width="89" FontSize="13"/>
+                        <TextBlock x:Name="LocalIP_TextBlk" HorizontalAlignment="Left" Margin="151,93,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" FontSize="13"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,117,0,0" TextWrapping="Wrap" Text="Local MAC Address" VerticalAlignment="Top" Height="19" Width="89" FontSize="13"/>
+                        <TextBlock x:Name="LocalMAC_TextBlk" HorizontalAlignment="Left" Margin="151,117,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" FontSize="13"/>
+
+                        <GroupBox Header="Dicovered Connection" HorizontalAlignment="Left" Margin="14,258,0,0" VerticalAlignment="Top" Height="154" Width="456" FontSize="13" Foreground="#FF0467AA">
+                            <ListBox x:Name="DiscoveredConnection_ListBox" HorizontalAlignment="Left" Height="119" Margin="8,9,0,0" VerticalAlignment="Top" Width="424" >
+
+                            </ListBox>
+                        </GroupBox>
+                        <Button x:Name="Apply_Btn" Content="Apply" HorizontalAlignment="Left" Margin="395,420,0,0" VerticalAlignment="Top" Width="75"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,151,0,0" TextWrapping="Wrap" Text="Remote Interface" VerticalAlignment="Top" Height="19" FontSize="13" Foreground="#FF0467AA"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,197,0,0" TextWrapping="Wrap" Text="IP Address" VerticalAlignment="Top" Height="19" Width="89" FontSize="13"/>
+                        <TextBlock x:Name="RemoteIP_TextBlk" HorizontalAlignment="Left" Margin="151,197,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" FontSize="13"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,221,0,0" TextWrapping="Wrap" Text="Mac Address" VerticalAlignment="Top" Height="19" Width="89" FontSize="13"/>
+                        <TextBlock x:Name="RemoteMAC_TextBlk" HorizontalAlignment="Left" Margin="151,221,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" FontSize="13"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="14,173,0,0" TextWrapping="Wrap" Text="Lunabot ID" VerticalAlignment="Top" Height="19" Width="89" FontSize="13"/>
+                        <TextBlock x:Name="RemoteInterfaceName_TextBlk" HorizontalAlignment="Left" Margin="151,174,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" FontSize="13"/>
+                        <Button x:Name="Test_Btn" Content="Test" HorizontalAlignment="Left" Margin="14,420,0,0" VerticalAlignment="Top" Width="75"/>
+
+                    </Grid>
+
+                    <GroupBox Header="Communications Log" Margin="2.5" MinHeight="150" MinWidth="300" FontSize="14" Foreground="#FF0467AA" Grid.Column="2" Grid.ColumnSpan="3"/>
+                    
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+        <Controls:ProgressRing HorizontalAlignment="Right" Margin="0,60,15,0" VerticalAlignment="Top" State="Indeterminate" FlowDirection="RightToLeft"      Height="20" Width="20" Grid.Column="1" />
+        <TextBlock x:Name="StatusText" HorizontalAlignment="Left" Margin="10,0,0,3" TextWrapping="Wrap" VerticalAlignment="Bottom" TextAlignment="Right" FontSize="14" Text="Offline"/>
+
+
+    </Grid>
+
+</Controls:Window>
