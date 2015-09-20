@@ -1,5 +1,5 @@
 # Lunabotics-Visualizer
-Visualizer is the Human Machine Interface for Purdue Lunabot !
+Visualizer is the Command Center (Human Machine Interface) for Purdue Lunabot !
 
 ![Alt text](https://github.com/piyushnet/Lunabotics-Visualizer/blob/master/AutomationStudio/Preview/04_Banner.png "Preview")
 
