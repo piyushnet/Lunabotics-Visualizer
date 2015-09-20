@@ -160,5 +160,8 @@
     <Resource Include="Preview\02_Overview.png" />
     <Resource Include="Preview\03_Communications.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Preview\04_Banner.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -5,7 +5,6 @@
     <Grid Margin="0" Background="White" Width="620" Height="151" HorizontalAlignment="Right" VerticalAlignment="Bottom">
         <Image HorizontalAlignment="Center" Margin="-23,-105,387,0" VerticalAlignment="Top" Source="Icons/BlueMoon/BlueMoon(Multi-SizeInOne).ico" Stretch="UniformToFill" Width="256" Height="256"/>
         <TextBlock HorizontalAlignment="Left" Margin="282,88,0,0" TextWrapping="Wrap" Text="harness the resources of space" VerticalAlignment="Top" FontFamily="Helvetica Neue" FontWeight="ExtraLight" FontSize="25" Foreground="#FF686262"/>
-        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="Icons/BOHR/Icon_Ring32.ico" Margin="338,183,0,0" Stretch="None" Visibility="Hidden"/>
         <TextBlock HorizontalAlignment="Left" Margin="234,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Helvetica Neue" FontWeight="ExtraLight" FontSize="48" Text="Purdue Lunabotics" Width="380" Height="62"/>
         <TextBlock HorizontalAlignment="Left" Margin="554,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"><Run Foreground="Gray" Text="Fall 2015"/></TextBlock>
 
