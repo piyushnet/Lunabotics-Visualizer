@@ -1,7 +1,7 @@
 # Lunabotics-Visualizer
 Visualizer is the Human Machine Interface for Purdue Lunabot !
 
-![Alt text](https://github.com/piyushnet/Lunabotics-Visualizer/blob/master/AutomationStudio/Preview/02_Overview.png "Preview")
+![Alt text](https://github.com/piyushnet/Lunabotics-Visualizer/blob/master/AutomationStudio/Preview/04_Banner.png "Preview")
 
 Summary:
 It is at the heart of the command/control room and provides all the teams with valuable information EARLY in the design & build process and more importantly during the competition.
