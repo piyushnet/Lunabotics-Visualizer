@@ -73,6 +73,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AsyncUDPClient.vb" />
     <Compile Include="Welcome.xaml.vb">
       <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
